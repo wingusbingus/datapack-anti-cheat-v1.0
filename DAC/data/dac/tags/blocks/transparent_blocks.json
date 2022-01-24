@@ -1,0 +1,75 @@
+{
+    "values":[
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud",
+    "minecraft:amethyst_cluster",
+
+    "#banners",
+    "#minecraft:bamboo_plantable_on",
+    "minecraft:brewing_stand",
+    "#buttons",
+    "#carpets",
+    "minecraft:cobweb",
+    "minecraft:comparator",
+    "minecraft:composter",
+    "minecraft:cauldron",
+    "minecraft:daylight_detector",
+    "minecraft:dead_bush",
+    "minecraft:end_rod",
+    "#flowers",
+    "minecraft:fire",
+
+    "minecraft:warped_fungus",
+    "minecraft:crimson_fungus",
+
+    "minecraft:grass",
+    "minecraft:tall_grass",
+
+    "minecraft:hopper",
+    
+    "minecraft:ladder",
+    "minecraft:lever",
+    "minecraft:lightning_rod",
+
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+
+    "#pressure_plates",
+
+    "#rails",
+
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+
+    "minecraft:vine",
+    "minecraft:weeping_vines",
+    "minecraft:twisting_vines",
+
+    "#trapdoors",
+
+    "minecraft:redstone_wire",
+    "minecraft:repeater",
+
+    "minecraft:warped_roots",
+    "minecraft:crimson_roots",
+
+    "#saplings",
+    "#signs",
+    "minecraft:sugar_cane",
+
+    "minecraft:snow",
+
+
+    "minecraft:end_gateway",
+    "minecraft:end_portal",
+    "minecraft:nether_portal",
+    "minecraft:pumpkin_stem",
+    "minecraft:melon_stem"
+
+
+]}
