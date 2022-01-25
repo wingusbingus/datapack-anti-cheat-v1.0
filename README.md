@@ -1,5 +1,6 @@
 # datapack-anti-cheat-v1.0
 ONLY WORKS ON VERSIONS 1.18+
+        
         How to install:
 
 1) Move the "DAC" folder inside the "datapack-anti-cheat-v1.0-main" folder to your desktop.
