@@ -1,5 +1,5 @@
     #   TEXT & PERMS
-tellraw @p {"text":"DAC reloaded","color":"blue"}
+tellraw @p {"text":"DAC reloaded","color":"blue","clickEvent":{"action":"run_command","value":"/function dac:aaxxoolloottll/axolotlsummon/summon_dac"},"hoverEvent":{"action":"show_text","contents":["Click to summon \"Mr. DAC\""]}}
 tellraw @p ["",{"text":"[DAC] ","bold":true,"color":"dark_red"},"Do you want to disable ",{"text":"experimental mode?","underlined":true,"hoverEvent":{"action":"show_text","contents":["Experimental mode tells everyone on the server when a player is detected cheating"]}}]
 tellraw @p ["",{"text":"[YES]   ","bold":true,"color":"dark_green","clickEvent":{"action":"run_command","value":"/tag @p add DACdisExp"}},{"text":"   [NO]","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/tag @p add DACenExp"}}]
 #tag @p add DACadmin
