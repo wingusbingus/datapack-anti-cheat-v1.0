@@ -55,14 +55,14 @@ execute as @a at @s unless block ~-0.301 ~-1.3 ~-0.301 lava run tag @s remove p4
 
 
 # If player is right over WATER but not touching it for 0.25s => trigger "jesus" cheat
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=5}] run tag @s add DDACJesus
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=5}] run scoreboard players set @s DACjesusTimer 0
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=5}] at @s unless entity @e[type=!player,distance=..1.6] run tag @s add DDACJesus
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=5}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 0
 
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=4}] run scoreboard players set @s DACjesusTimer 5
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=3}] run scoreboard players set @s DACjesusTimer 4
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=2}] run scoreboard players set @s DACjesusTimer 3
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=1}] run scoreboard players set @s DACjesusTimer 2
-execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=0}] run scoreboard players set @s DACjesusTimer 1
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=4}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 5
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=3}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 4
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=2}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 3
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=1}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 2
+execute as @a[scores={DACisOverWater=1,DACisOnWater=0,DACjesusTimer=0}] at @s unless entity @e[type=!player,distance=..1.6] run scoreboard players set @s DACjesusTimer 1
 
 # If player is right over LAVA but not touching it for 0.25s => trigger "jesus" cheat
 execute as @a[scores={DACisOverLava=1,DACisOnLava=0,DACjesusTimer=5}] run tag @s add DDACJesus
