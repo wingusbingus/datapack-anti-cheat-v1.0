@@ -10,13 +10,13 @@ scoreboard players set @a[scores={DACisOnFence=1}] DACisOnGround 1
 scoreboard players set @a[scores={DACisOnSlim=1}] DACisOnGround 1
 
 # Activates ground points
-execute as @a at @s if block ~0.299 ~-0.1 ~0.299 air run tag @s add p1noG
-execute as @a at @s if block ~-0.299 ~-0.1 ~0.299 air run tag @s add p2noG
-execute as @a at @s if block ~0.299 ~-0.1 ~-0.299 air run tag @s add p3noG
-execute as @a at @s if block ~-0.299 ~-0.1 ~-0.299 air run tag @s add p4noG
+execute as @a at @s if block ~0.300 ~-0.1 ~0.300 air run tag @s add p1noG
+execute as @a at @s if block ~-0.300 ~-0.1 ~0.300 air run tag @s add p2noG
+execute as @a at @s if block ~0.300 ~-0.1 ~-0.300 air run tag @s add p3noG
+execute as @a at @s if block ~-0.300 ~-0.1 ~-0.300 air run tag @s add p4noG
 
 # Deactivates ground points
-execute as @a at @s unless block ~0.299 ~-0.1 ~0.299 air run tag @s remove p1noG
-execute as @a at @s unless block ~-0.299 ~-0.1 ~0.299 air run tag @s remove p2noG
-execute as @a at @s unless block ~0.299 ~-0.1 ~-0.299 air run tag @s remove p3noG
-execute as @a at @s unless block ~-0.299 ~-0.1 ~-0.299 air run tag @s remove p4noG
+execute as @a at @s unless block ~0.300 ~-0.1 ~0.300 air run tag @s remove p1noG
+execute as @a at @s unless block ~-0.300 ~-0.1 ~0.300 air run tag @s remove p2noG
+execute as @a at @s unless block ~0.300 ~-0.1 ~-0.300 air run tag @s remove p3noG
+execute as @a at @s unless block ~-0.300 ~-0.1 ~-0.300 air run tag @s remove p4noG
