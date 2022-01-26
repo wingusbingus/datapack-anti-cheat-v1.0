@@ -19,4 +19,4 @@ IF IT DIDN'T WORK:
 Detects: Flight, NoFall, Float, WalkOnWater, Speed, FastPlace, Illegal Block Placement, Reach.
 
         Note:
-Due to the fact that this Anti Cheat was very recently created, it might have bugs, thus it won't be applying any punishments to the players it detects cheating, since it might kick/ban innocent players.
+Due to the fact that this Anti Cheat was very recently created, it might have bugs, thus it won't be applying any punishments to the players it detects cheating, since it might kick/ban innocent players. Feedback and suggestions are greatly appreciated.
