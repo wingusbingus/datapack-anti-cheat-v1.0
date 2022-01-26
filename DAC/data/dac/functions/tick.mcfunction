@@ -67,6 +67,9 @@ tag @a[scores={DACcDownCFruit=0}] remove DACcFruit
 function dac:on_block
 function dac:over_block
 
+    # Is Under Ground?
+function dac:under_block
+
     # Vertical Flight
 function dac:detection/det_vertical_flight
 
