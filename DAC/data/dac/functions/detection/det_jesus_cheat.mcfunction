@@ -1,11 +1,11 @@
     # WATER
 # unless 4 points (X;Y, -X;Y, X;-Y, -X;-Y) deactivated, DACisOverWater = 0 (water)
-scoreboard players set @a[tag=p1noOWater] DACisOverWater 1
-scoreboard players set @a[tag=p2noOWater] DACisOverWater 1
-scoreboard players set @a[tag=p3noOWater] DACisOverWater 1
-scoreboard players set @a[tag=p4noOWater] DACisOverWater 1
+scoreboard players set @a[tag=!p1noOWater] DACisOverWater 0
+scoreboard players set @a[tag=!p2noOWater] DACisOverWater 0
+scoreboard players set @a[tag=!p3noOWater] DACisOverWater 0
+scoreboard players set @a[tag=!p4noOWater] DACisOverWater 0
 # unless at least 1 of 4 points on ground, DACisOverWater = 1 (ground)
-scoreboard players set @a[tag=!p1noOWater,tag=!p2noOWater,tag=!p3noOWater,tag=!p4noOWater] DACisOverWater 0
+scoreboard players set @a[tag=p1noOWater,tag=p2noOWater,tag=p3noOWater,tag=p4noOWater] DACisOverWater 1
 
 
 
@@ -27,20 +27,20 @@ execute as @a at @s unless block ~-0.299 ~-1.3 ~-0.299 water run tag @s remove p
 
     # LAVA
 # unless 4 points (X;Y, -X;Y, X;-Y, -X;-Y) deactivated, DACisOverLava = 0 (lava)
-scoreboard players set @a[tag=p1noOLava] DACisOverLava 1
-scoreboard players set @a[tag=p2noOLava] DACisOverLava 1
-scoreboard players set @a[tag=p3noOLava] DACisOverLava 1
-scoreboard players set @a[tag=p4noOLava] DACisOverLava 1
+scoreboard players set @a[tag=!p1noOLava] DACisOverLava 0
+scoreboard players set @a[tag=!p2noOLava] DACisOverLava 0
+scoreboard players set @a[tag=!p3noOLava] DACisOverLava 0
+scoreboard players set @a[tag=!p4noOLava] DACisOverLava 0
 # unless at least 1 of 4 points on ground, DACisOverLava = 1 (ground)
-scoreboard players set @a[tag=!p1noOLava,tag=!p2noOLava,tag=!p3noOLava,tag=!p4noOLava] DACisOverLava 0
+scoreboard players set @a[tag=p1noOLava,tag=p2noOLava,tag=p3noOLava,tag=p4noOLava] DACisOverLava 1
 
 
 
 # Activates ground points
-execute as @a at @s if block ~0.299 ~-1.3 ~0.299 lava unless block ~0.299 ~-0.1 ~0.299 air run tag @s add p1noOWater
-execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 lava unless block ~-0.299 ~-0.1 ~0.299 air run tag @s add p2noOWater
-execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 lava unless block ~0.299 ~-0.1 ~-0.299 air run tag @s add p3noOWater
-execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 lava unless block ~-0.299 ~-0.1 ~-0.299 air run tag @s add p4noOWater
+execute as @a at @s if block ~0.299 ~-1.3 ~0.299 lava run tag @s add p1noOLava
+execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 lava run tag @s add p2noOLava
+execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 lava run tag @s add p3noOLava
+execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 lava run tag @s add p4noOLava
 
 # Deactivates ground points
 execute as @a at @s unless block ~0.299 ~-1.3 ~0.299 lava run tag @s remove p1noOLava
