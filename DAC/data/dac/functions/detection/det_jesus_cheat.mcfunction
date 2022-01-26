@@ -10,16 +10,26 @@ scoreboard players set @a[tag=p1noOWater,tag=p2noOWater,tag=p3noOWater,tag=p4noO
 
 
 # Activates ground points
-execute as @a at @s if block ~0.301 ~-1.3 ~0.301 water unless block ~0.301 ~-0.1 ~0.301 air run tag @s add p1noOWater
-execute as @a at @s if block ~-0.301 ~-1.3 ~0.301 water unless block ~-0.301 ~-0.1 ~0.301 air run tag @s add p2noOWater
-execute as @a at @s if block ~0.301 ~-1.3 ~-0.301 water unless block ~0.301 ~-0.1 ~-0.301 air run tag @s add p3noOWater
-execute as @a at @s if block ~-0.301 ~-1.3 ~-0.301 water unless block ~-0.301 ~-0.1 ~-0.301 air run tag @s add p4noOWater
+execute as @a[scores={DACisOnGround=0}] at @s if block ~0.301 ~-1.3 ~0.301 water run tag @s add p1noOWater
+execute as @a[scores={DACisOnGround=0}] at @s if block ~-0.301 ~-1.3 ~0.301 water run tag @s add p2noOWater
+execute as @a[scores={DACisOnGround=0}] at @s if block ~0.301 ~-1.3 ~-0.301 water run tag @s add p3noOWater
+execute as @a[scores={DACisOnGround=0}] at @s if block ~-0.301 ~-1.3 ~-0.301 water run tag @s add p4noOWater
+
+execute as @a[scores={DACisOnGround=1}] at @s if block ~0.301 ~-0.3 ~0.301 water run tag @s add p1noOWater
+execute as @a[scores={DACisOnGround=1}] at @s if block ~-0.301 ~-0.3 ~0.301 water run tag @s add p2noOWater
+execute as @a[scores={DACisOnGround=1}] at @s if block ~0.301 ~-0.3 ~-0.301 water run tag @s add p3noOWater
+execute as @a[scores={DACisOnGround=1}] at @s if block ~-0.301 ~-0.3 ~-0.301 water run tag @s add p4noOWater
 
 # Deactivates ground points
-execute as @a at @s unless block ~0.301 ~-1.3 ~0.301 water run tag @s remove p1noOWater
-execute as @a at @s unless block ~-0.301 ~-1.3 ~0.301 water run tag @s remove p2noOWater
-execute as @a at @s unless block ~0.301 ~-1.3 ~-0.301 water run tag @s remove p3noOWater
-execute as @a at @s unless block ~-0.301 ~-1.3 ~-0.301 water run tag @s remove p4noOWater
+execute as @a[scores={DACisOnGround=0}] at @s unless block ~0.301 ~-1.3 ~0.301 water run tag @s remove p1noOWater
+execute as @a[scores={DACisOnGround=0}] at @s unless block ~-0.301 ~-1.3 ~0.301 water run tag @s remove p2noOWater
+execute as @a[scores={DACisOnGround=0}] at @s unless block ~0.301 ~-1.3 ~-0.301 water run tag @s remove p3noOWater
+execute as @a[scores={DACisOnGround=0}] at @s unless block ~-0.301 ~-1.3 ~-0.301 water run tag @s remove p4noOWater
+
+execute as @a[scores={DACisOnGround=1}] at @s unless block ~0.301 ~-0.3 ~0.301 water run tag @s remove p1noOWater
+execute as @a[scores={DACisOnGround=1}] at @s unless block ~-0.301 ~-0.3 ~0.301 water run tag @s remove p2noOWater
+execute as @a[scores={DACisOnGround=1}] at @s unless block ~0.301 ~-0.3 ~-0.301 water run tag @s remove p3noOWater
+execute as @a[scores={DACisOnGround=1}] at @s unless block ~-0.301 ~-0.3 ~-0.301 water run tag @s remove p4noOWater
 
 
 
