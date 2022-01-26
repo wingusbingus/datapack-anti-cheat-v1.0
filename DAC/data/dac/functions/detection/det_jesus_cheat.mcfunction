@@ -10,10 +10,10 @@ scoreboard players set @a[tag=!p1noOWater,tag=!p2noOWater,tag=!p3noOWater,tag=!p
 
 
 # Activates ground points
-execute as @a at @s if block ~0.299 ~-1.3 ~0.299 water run tag @s add p1noOWater
-execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 water run tag @s add p2noOWater
-execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 water run tag @s add p3noOWater
-execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 water run tag @s add p4noOWater
+execute as @a at @s if block ~0.299 ~-1.3 ~0.299 water unless block ~0.299 ~-0.1 ~0.299 air run tag @s add p1noOWater
+execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 water unless block ~-0.299 ~-0.1 ~0.299 air run tag @s add p2noOWater
+execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 water unless block ~0.299 ~-0.1 ~-0.299 air run tag @s add p3noOWater
+execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 water unless block ~-0.299 ~-0.1 ~-0.299 air run tag @s add p4noOWater
 
 # Deactivates ground points
 execute as @a at @s unless block ~0.299 ~-1.3 ~0.299 water run tag @s remove p1noOWater
@@ -37,10 +37,10 @@ scoreboard players set @a[tag=!p1noOLava,tag=!p2noOLava,tag=!p3noOLava,tag=!p4no
 
 
 # Activates ground points
-execute as @a at @s if block ~0.299 ~-1.3 ~0.299 lava run tag @s add p1noOLava
-execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 lava run tag @s add p2noOLava
-execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 lava run tag @s add p3noOLava
-execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 lava run tag @s add p4noOLava
+execute as @a at @s if block ~0.299 ~-1.3 ~0.299 lava unless block ~0.299 ~-0.1 ~0.299 air run tag @s add p1noOWater
+execute as @a at @s if block ~-0.299 ~-1.3 ~0.299 lava unless block ~-0.299 ~-0.1 ~0.299 air run tag @s add p2noOWater
+execute as @a at @s if block ~0.299 ~-1.3 ~-0.299 lava unless block ~0.299 ~-0.1 ~-0.299 air run tag @s add p3noOWater
+execute as @a at @s if block ~-0.299 ~-1.3 ~-0.299 lava unless block ~-0.299 ~-0.1 ~-0.299 air run tag @s add p4noOWater
 
 # Deactivates ground points
 execute as @a at @s unless block ~0.299 ~-1.3 ~0.299 lava run tag @s remove p1noOLava
