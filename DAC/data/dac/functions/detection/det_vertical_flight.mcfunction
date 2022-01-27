@@ -15,7 +15,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator] if score @s DACtimeOnAir20
 
 # Prevents False-Positive by KB
     execute as @a[] at @s if score @s DACtimeOnAir20 matches 2 if entity @e[type=minecraft:iron_golem,distance=..5] run scoreboard players operation @s DACmaxycoord += 20 constants
-    execute as @a[] at @s if score @s DACtimeOnAir20 matches 2 if entity @e[type=minecraft:ender_dragon,distance=..1000] run scoreboard players operation @s DACmaxycoord += 1500 constants
+    execute as @a[] at @s if score @s DACtimeOnAir20 matches 2 if entity @e[type=minecraft:ender_dragon,distance=..100] run scoreboard players operation @s DACmaxycoord += 1500 constants
 
 # Resets DACmaxycoord (1 tick before it gets updated to match DACycoord's value & get added 20)
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={DACisOnGround=1}] at @s run scoreboard players reset @s DACmaxycoord
