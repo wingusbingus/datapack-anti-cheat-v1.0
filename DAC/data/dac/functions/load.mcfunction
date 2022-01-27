@@ -43,6 +43,7 @@ scoreboard players set 20 constants 20
 scoreboard players set 25 constants 25
 scoreboard players set 30 constants 30
 scoreboard players set 35 constants 35
+scoreboard players set 500 constants 500
 scoreboard players set 1500 constants 1500
 scoreboard players set 10000 constants 10000
 
