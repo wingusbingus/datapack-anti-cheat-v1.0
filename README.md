@@ -20,3 +20,5 @@ Detects: Flight, NoFall, Float, WalkOnWater, Speed, FastPlace, Illegal Block Pla
 
         Note:
 Due to the fact that this Anti Cheat was very recently created, it might have bugs, thus it won't be applying any punishments to the players it detects cheating, since it might kick/ban innocent players. Feedback and suggestions, as well as reporting bugs are greatly appreciated.
+
+Ps.: If you on spigot or bukkit, just run a normal AC plugin instead of a datapack.
